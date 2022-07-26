@@ -7,6 +7,11 @@
         "type": "image/png",
         "purpose": "maskable"
     }, {
+        "src": "/TP3-Site-Responsive/img/icons/maskable_icon_x144Cat.png",
+        "sizes": "144x144",
+        "type": "image/png",
+        "purpose": "maskable"
+    }, {
         "src": "/TP3-Site-Responsive/img/icons/maskable_icon_x192Cat.png",
         "sizes": "192x192",
         "type": "image/png",
