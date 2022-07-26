@@ -1,12 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="utf-8" />
+	<title> </title>
+	<meta name="description" content="TP3 - Site web responsive">
+	<!-- meta viewport : importante à inclure pour l'affichage sur les divers appareils -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+	<header>
+		<div class="container">
+			<h1 href="index.html"><img class="logo" src="img/logo-burger-shop.png" alt="Logo Burger Shop"></h1>
+			<div id="navNone">
+				<a class="" href="index.html">Menu</a>
+				<a class="" href="reservation.html">Réservation</a>
+				<a class="" href="restaurant.html">Restaurant</a>
+				<a class="" href="macommande.html">Ma commande</a>
+			</div>
+			<nav>
+				<ul>
+                    <li><a class="nav actuel" href="index.html">Menu</a></li>
+                    <li><a class="nav" href="reservation.html">Réservation</a></li>
+                    <li><a class="nav" href="restaurant.html">Restaurant</a></li>
+                    <li><a class="nav navComm" href="macommande.html">Ma commande</a></li>
+                </ul>
+				<img class="iconmenu" src="img/icon-menu-fonce.png" alt="Icon du menu" onclick="myFunction()">
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<h2>NOS BURGERS</h2>
+				<div class="grille">
+					<section class="burger">
+						<img class="imgburger" src="img/menu/burger-choux.png" alt="Burger choux">
+						<h4>Le Commodo</h4>
+						<p>9,99$</p>
+						<a class="btn" href="#">Ajouter au panier</a>
+					</section>
+					<section class="burger">
+						<img class="imgburger" src="img/menu/burger-double-fromage.png" alt="Burger double fromage">
+						<h4>Le Lorem</h4>
+						<p>12,99$</p>
+						<a class="btn" href="#">Ajouter au panier</a>
+					</section>
+					<section class="burger">
+						<img class="imgburger" src="img/menu/burger-fromage.png" alt="Burger fromage">
+						<h4>Le Dolar Met</h4>
+						<p>8,99$</p>
+						<a class="btn" href="#">Ajouter au panier</a>
+					</section>
+					<section class="burger">
+						<img class="imgburger" src="img/menu/burger-vege.png" alt="Burger pain noir">
+						<h4>Le Fugiat</h4>
+						<p>11,99$</p>
+						<a class="btn" href="#">Ajouter au panier</a>
+					</section>
+					<section class="burger">
+						<img class="imgburger" src="img/menu/burger-poisson.png" alt="Burger poisson">
+						<h4>Le Laboris</h4>
+						<p>12,99$</p>
+						<a class="btn" href="#">Ajouter au panier</a>
+					</section>
+					<section class="burger">
+						<img class="imgburger" src="img/menu/burger-sesame.png" alt="Burger sesame">
+						<h4>Le Cubidatat</h4>
+						<p>14,99$</p>
+						<a class="btn" href="#">Ajouter au panier</a>
+					</section>
+				</div>
+			<h2>NOS BEIGNES</h2>
+				<div class="grille">
+				<section class="beigne">
+					<img class="imgbeigne" src="img/menu/beign-bleuet.png" alt="Beigne bleuet">
+					<h4>Le Etiam</h4>
+					<p>3,99$</p>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</section>
+				<section class="beigne">
+					<img class="imgbeigne" src="img/menu/beigne-bonbons.png" alt="Beigne bonbons">
+					<h4>Le Malesuada</h4>
+					<p>2,99$</p>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</section>
+				<section class="beigne">
+					<img class="imgbeigne" src="img/menu/beigne-chocolat.png" alt="Beigne chocolat">
+					<h4>Le Vestibulum</h4>
+					<p>1,99$</p>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</section>
+				<section class="beigne">
+					<img class="imgbeigne" src="img/menu/beigne-coconut.png" alt="Beigne coconut">
+					<h4>Le Maximus</h4>
+					<p>2,99$</p>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</section>
+			</div>
+		</div>
+	</main>
+	<section class="sectshirt">
+		<div class="container texttshirt">
+			<div class="divtshirt">
+				<h3>LE T-SHIRT BURGER SHOP</h3>
+				<p>At vero eos at accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+				<a class="btn" href="#">Ajouter au panier</a>
+			</div>
+			<img class="imgtshirt" src="img/t-shirt.png" alt="T-Shirt Burger Shop">
+		</div>
+	</section>
+	<section class="secfooter">
+		<div class="container nomEntreprise">
+			<p>Burger Shop : 1660 Boul. de l'Entente, Québec</p>
+			<a class="btnNumero" href="tel:+14181234567">418-123-4567</a>
+		</div>
+	</section>
+	<footer>
+		<div class="container realise">
+			<p>Site réalisé par : <strong>Caroline Poulin</strong> | Dans le cadre de AEC développement web front-end - Cégep de Trois-Rivière</p>
+		</div>
+	</footer>
 </body>
 </html>
+<script type="text/javascript" src="js/script.js"></script>

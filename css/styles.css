@@ -1,0 +1,406 @@
+
+/* Propriétés générales */
+
+* {box-sizing: border-box;}
+
+body {
+	font-family:'Lucida';
+	background-color: #056def38;}
+
+h1, h2, h3, h4, h5 {
+	font-family: Cambria;}
+
+img {max-width: 100%;}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;}
+
+p {color: #370e54;}
+
+
+
+/* ----- Header ----- */
+
+.logo {width: 200px;}
+
+header div {
+    display: flex;
+    justify-content: space-between;}
+
+.iconmenu {
+	display: none;}
+
+#navNone {
+	display:none;
+	margin-top: 30px;
+}
+
+#navNone a{
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1.2rem;
+	padding: 5px;
+	color: black;
+}
+
+#navNone a:hover{
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1.2rem;
+	padding: 5px;
+	color: #05b2f7;
+}
+
+nav li {
+	display: inline-block;
+	padding: 10px;}
+
+nav a {
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: black;
+	padding: 10px;}
+
+nav a:hover {
+	color: #370e54;
+	background-color: #05b2f7;
+    padding: 10px;}
+
+.navComm {
+	color: white;
+	background-color: black;
+	padding: 10px;}
+
+
+
+/* ----- Page d'accueil ----- */
+
+.grille {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;}
+
+.burger, .beigne {
+	width: 25%;
+	padding-bottom: 30px;
+	text-align: center;}
+
+.btn {
+	background-color: black;
+	color: white;
+	padding: 10px;
+	text-decoration: none;}
+
+.btn:hover {background-color: #370e54;}
+
+
+
+/* ----- Restaurant ----- */
+
+.grid {
+	padding: 10px 0 30px 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+	"imgresto1 imgresto1 imgresto2"
+	"imgresto1 imgresto1 imgresto3"
+	"imgresto4 imgresto5 imgresto5"
+	"imgresto6 imgresto5 imgresto5";}
+
+.imgresto1 {grid-area: imgresto1;}
+.imgresto2 {grid-area: imgresto2;}
+.imgresto3 {grid-area: imgresto3;}
+.imgresto4 {grid-area: imgresto4;}
+.imgresto5 {grid-area: imgresto5;}
+.imgresto6 {grid-area: imgresto6;}
+
+
+
+/* ----- Commande ----- */
+
+.commande {margin-bottom: 50px;}
+
+.articles {
+	width: 66%;
+	display: inline-block;}
+
+.article {
+	width: 75%;
+	margin-bottom: 10px;}
+
+.quantite {
+	width: 25%;
+	text-align: right;}
+
+main li {
+	list-style-type: none;}
+
+.articleTitre {
+	font-size: 1.5rem;
+	margin: 20px 10px;}
+
+.fleche {width: 15px;}
+
+.liste {
+	display: flex;
+	margin-bottom: 10px;
+	border-bottom: 1px solid gray;}
+
+.listedetails {
+	display: flex;
+	margin-bottom: 10px;
+	justify-content: space-between;}
+
+.listearticle {
+	margin-right: 50px;
+	padding-bottom: 20px;}
+
+.prix {
+	margin-left: -30px;
+	margin-right: 40px;}
+
+.soustotal, .taxes, .total {
+	display: flex;
+	margin-bottom: 15px;
+	justify-content: space-between;}
+
+.taxes {
+	border-bottom: 2px solid black;
+	padding-bottom: 10px;}
+
+.total {padding-bottom: 20px;}
+
+.details {
+	width: 33%;
+	background-color: rgb(179, 179, 179);
+	display: inline-block;}
+
+
+
+/* ----- Réservation ---- */
+
+span {color: red;}
+
+.h1Reservation {text-align: center;}
+
+form {
+	border: 1px solid black;
+	max-width: 60%;
+	margin: 20px auto;
+	padding: 30px 40px 20px;
+	background-color: #f5f5f5}
+
+#telNo, #date {width: 150px;}
+
+.commentaire {vertical-align: top;}
+
+#commentaire {
+	min-height: 100px;
+	margin: 20px 0;}
+
+label {
+	display: inline-block;
+	width: 200px;
+	margin: 20px 0;}
+
+input, textarea {width: 250px;}
+
+.endroit, .infolettre {display: inline;}
+
+#salle, #terrasse, #ckbListe {
+	width: 40px;
+	margin: 20px 30px;}
+
+
+
+/* ----- Confirmation ---- */
+
+.confirmation {
+	margin: 100px auto 200px;
+	text-align: center;}
+
+
+
+/* ----- T-Shirt ---- */
+
+.sectshirt {background-color: rgb(179, 179, 179);}
+
+.imgtshirt {
+	width: 400px;
+	padding: 20px;}
+
+.texttshirt {display: flex;}
+
+.divtshirt {padding: 20px;}
+
+
+
+/* ----- Footer ----- */
+
+.secfooter {
+	background-color: rgb(85, 84, 84);
+	color: white;}
+
+.nomEntreprise {
+	padding: 20px 0 20px 0;
+	font-size: 1.5rem;
+	display: flex;
+    justify-content: space-between;}
+
+.nomEntreprise p {color: black;}
+
+footer {text-align: center;}
+
+.btnNumero {
+	background-color: white;
+	color: black;
+	margin: 15px;
+	padding: 10px 20px;
+	text-decoration: none;}
+
+.btnNumero:hover {
+	background-color: black;
+	color: white;}
+
+
+
+/* ----- Media screen ----- */
+
+@media screen and (max-width: 1200px) {	
+	/* ----- Header ----- */
+	#navNone {
+		display:none;
+	}
+
+	/* ----- Réservation ---- */
+	form {max-width: 70%;}
+}
+
+
+@media screen and (max-width: 960px) {
+	/* ----- Header ----- */
+	#navNone {
+		display:none;
+	}
+	.logo {width: 150px;}
+	.iconmenu {
+		display: inline-block;
+		margin: 20px;}
+	nav ul {display: none;}
+
+	/* ----- Page d'accueil ----- */
+	.btn {
+		padding: 5px;
+		text-decoration: none;}
+	.btn:hover {background-color: #370e54;}
+
+	/* ----- T-Shirt ---- */
+	.imgtshirt {width: 200px;}
+
+	/* ----- Footer ----- */
+	.nomEntreprise {font-size: 1rem;}
+	.btnNumero {padding: 5px 10px;}
+	
+	/* ----- Restaurant ----- */
+	.grid {
+		padding: 10px 0 30px 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+		"imgresto1 imgresto1"
+		"imgresto1 imgresto1"
+		"imgresto2 imgresto3"
+		"imgresto4 imgresto6"
+		"imgresto5 imgresto5"
+		"imgresto5 imgresto5";}
+	.imgresto1 {grid-area: imgresto1;
+		width: 100%;}
+	.imgresto2 {grid-area: imgresto2;}
+	.imgresto3 {grid-area: imgresto3;}
+	.imgresto4 {grid-area: imgresto4;}
+	.imgresto5 {grid-area: imgresto5;
+		width: 100%;}
+	.imgresto6 {grid-area: imgresto6;}
+}
+
+
+@media screen and (max-width: 785px) {
+	/* ----- Header ----- */
+	#navNone a{
+		display: block;
+	}
+
+	/* ----- T-Shirt ---- */
+	.imgtshirt {
+		width: 180px;
+		padding: 20px 5px;}
+
+	/* ----- Commande ----- */
+	.article {width: 65%;}
+	.quantite {width: 35%;}
+	.articleTitre {margin: 20px -10px;}
+	.listearticle {margin-right: 25px;}
+	.prix {
+		margin-left: -57px;
+		margin-right: 18px;}
+
+}
+
+@media screen and (max-width: 570px) {
+	/* ----- Header ----- */
+	.logo {width: 100px;}
+
+	/* ----- Page d'accueil ----- */
+	.burger, .beigne {
+		width: 50%;
+		padding-bottom: 30px;
+		text-align: center;}
+
+	/* ----- Commande ----- */
+	.articles {width: 100%;}
+	.listearticle {margin-right: 20px;}
+	.prix {
+		margin-left: 0px;
+		margin-right: 30px;}
+	.details {width: 100%;}
+
+	/* ----- Réservation ---- */
+	form {max-width: 85%;}
+
+	/* ----- T-Shirt ---- */
+	.imgtshirt {
+		width: 120px;
+		height: 200px;
+		padding: 30px 0px;}
+	.divtshirt {
+		width: 70%;
+		padding: 20px;}
+
+	/* ----- Footer ----- */
+	.nomEntreprise {font-size: 1rem;}
+	.btnNumero {
+		width: 125px;
+		padding: 10px 5px;}
+
+	/* ----- Restaurant ----- */
+	.grid {
+		padding: 10px 0 30px 0;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+		"imgresto1"
+		"imgresto2"
+		"imgresto3"
+		"imgresto4"
+		"imgresto5"
+		"imgresto6";}
+	.imgresto1 {grid-area: imgresto1;}
+	.imgresto2 {grid-area: imgresto2;}
+	.imgresto3 {grid-area: imgresto3;}
+	.imgresto4 {grid-area: imgresto4;}
+	.imgresto5 {grid-area: imgresto5;}
+	.imgresto6 {grid-area: imgresto6;}
+
+}
