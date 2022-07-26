@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8" />
+	<title> </title>
+	<meta name="description" content="TP3 - Site web responsive">
+	<!-- meta viewport : importante à inclure pour l'affichage sur les divers appareils -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header>
+        <div class="container">
+			<a href="index.html"><img class="logo" src="img/logo-burger-shop.png" alt="Logo Burger Shop"></a>
+			<div id="navNone">
+				<a class="" href="index.html">Menu</a>
+				<a class="" href="reservation.html">Réservation</a>
+				<a class="" href="restaurant.html">Restaurant</a>
+				<a class="" href="macommande.html">Ma commande</a>
+			</div>
+			<nav>
+				<ul>
+                    <li><a class="nav actuel" href="index.html">Menu</a></li>
+                    <li><a class="nav" href="reservation.html">Réservation</a></li>
+                    <li><a class="nav" href="restaurant.html">Restaurant</a></li>
+                    <li><a class="nav navComm" href="macommande.html">Ma commande</a></li>
+                </ul>
+				<img class="iconmenu" src="img/icon-menu-fonce.png" alt="Icon du menu" onclick="myFunction()">
+            </nav>
+		</div>
+	</header>
+	<main>
+        <h1 class="confirmation">Félicitation votre réservation a bien été effectuée !</h1>
+	</main>
+	<section class="secfooter">
+		<div class="container nomEntreprise">
+			<p>Burger Shop : 1660 Boul. de l'Entente, Québec</p>
+			<a class="btnNumero" href="tel:+14181234567">418-123-4567</a>
+		</div>
+	</section>
+	<footer>
+		<div class="container realise">
+			<p>Site réalisé par : <strong>Caroline Poulin</strong> | Dans le cadre de AEC développement web front-end - Cégep de Trois-Rivière</p>
+		</div>
+	</footer>
+</body>
+</html>
+<script type="text/javascript" src="js/script.js"></script>

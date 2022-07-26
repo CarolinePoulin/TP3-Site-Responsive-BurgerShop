@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8" />
+	<title> </title>
+	<meta name="description" content="TP3 - Site web responsive">
+	<!-- meta viewport : importante à inclure pour l'affichage sur les divers appareils -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<a href="index.html"><img class="logo" src="img/logo-burger-shop.png" alt="Logo Burger Shop"></a>
+			<div id="navNone">
+				<a class="" href="index.html">Menu</a>
+				<a class="" href="reservation.html">Réservation</a>
+				<a class="" href="restaurant.html">Restaurant</a>
+				<a class="" href="macommande.html">Ma commande</a>
+			</div>
+			<nav>
+				<ul>
+                    <li><a class="nav actuel" href="index.html">Menu</a></li>
+                    <li><a class="nav" href="reservation.html">Réservation</a></li>
+                    <li><a class="nav" href="restaurant.html">Restaurant</a></li>
+                    <li><a class="nav navComm" href="macommande.html">Ma commande</a></li>
+                </ul>
+				<img class="iconmenu" src="img/icon-menu-fonce.png" alt="Icon du menu" onclick="myFunction()">
+            </nav>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<h1>MA COMMANDE</h1>
+			<div class="commande">
+				<div class="articles">
+					<ul>
+						<li class="articleTitre"><img class="fleche" src="img/icon-fleche-fonce.png" alt="Flèche foncé"> Burgers</li>
+						<ul class="listearticle">
+							<div class="liste burger1">
+								<li class="article">Le Commodo | 9,99$</li>
+								<li class="quantite">Quantité: 1</li>
+							</div>
+							<div class="liste burger2">
+								<li class="article">Le Lorem | 12,99$</li>
+								<li class="quantite">Quantité: 1</li>
+							</div>
+						</ul>
+						<li class="articleTitre"><img class="fleche" src="img/icon-fleche-fonce.png" alt="Flèche foncé"> Beignes</li>
+						<ul class="listearticle">
+							<div class="liste beigne1">
+								<li class="article">Le Etiam | 3,99$</li>
+								<li class="quantite">Quantité: 1</li>
+							</div>
+							<div class="liste beigne2">
+								<li class="article">Le Maximus | 2,99$</li>
+								<li class="quantite">Quantité: 1</li>
+							</div>
+						</ul>
+					</ul>
+				</div>
+				<div class="details">
+					<ul>
+						<li class="articleTitre">Détails</li>
+						<ul class="prix">
+							<div class="soustotal">
+								<li>Sous-total :</li>
+								<li>29.96$</li>
+							</div>
+							<div class="taxes">
+								<li>Taxes :</li>
+								<li>4.49$</li>
+							</div>
+							<div class="total">
+								<li>Total :</li>
+								<li>34.45$</li>
+							</div>
+						</ul>
+						<a class="btn" href="">Commander</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+	<section class="sectshirt">
+		<div class="container texttshirt">
+			<div class="divtshirt">
+				<h3>LE T-SHIRT BURGER SHOP</h3>
+				<p>At vero eos at accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+				<a class="btn" href="#">Ajouter au panier</a>
+			</div>
+			<img class="imgtshirt" src="img/t-shirt.png" alt="T-Shirt Burger Shop">
+		</div>
+	</section>
+	<section class="secfooter">
+		<div class="container nomEntreprise">
+			<p>Burger Shop : 1660 Boul. de l'Entente, Québec</p>
+			<a class="btnNumero" href="tel:+14181234567">418-123-4567</a>
+		</div>
+	</section>
+	<footer>
+		<div class="container realise">
+			<p>Site réalisé par : <strong>Caroline Poulin</strong> | Dans le cadre de AEC développement web front-end - Cégep de Trois-Rivière</p>
+		</div>
+	</footer>
+</body>
+</html>
+<script type="text/javascript" src="js/script.js"></script>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8" />
+	<title> </title>
+	<meta name="description" content="TP3 - Site web responsive">
+	<!-- meta viewport : importante à inclure pour l'affichage sur les divers appareils -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<a href="index.html"><img class="logo" src="img/logo-burger-shop.png" alt="Logo Burger Shop"></a>
+			<div id="navNone">
+				<a class="" href="index.html">Menu</a>
+				<a class="" href="reservation.html">Réservation</a>
+				<a class="" href="restaurant.html">Restaurant</a>
+				<a class="" href="macommande.html">Ma commande</a>
+			</div>
+			<nav>
+				<ul>
+                    <li><a class="nav actuel" href="index.html">Menu</a></li>
+                    <li><a class="nav" href="reservation.html">Réservation</a></li>
+                    <li><a class="nav" href="restaurant.html">Restaurant</a></li>
+                    <li><a class="nav navComm" href="macommande.html">Ma commande</a></li>
+                </ul>
+				<img class="iconmenu" src="img/icon-menu-fonce.png" alt="Icon du menu" onclick="myFunction()">
+            </nav>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<h1>LE RESTAURANT</h1>
+			<div class="grid">
+				<img class="imgresto1" src="img/resto/fille-burger.png" alt="Burger choux">
+				<img class="imgresto2" src="img/resto/gars-burger.png" alt="Burger choux">
+				<img class="imgresto3" src="img/resto/salle-restaurant.png" alt="Burger choux">
+				<img class="imgresto4" src="img/resto/serveur.png" alt="Burger choux">
+				<img class="imgresto5" src="img/resto/table-dessus.png" alt="Burger choux">
+				<img class="imgresto6" src="img/resto/terrasse.png" alt="Burger choux">
+			</div>
+		</div>
+	</main>
+	<section class="secfooter">
+		<div class="container nomEntreprise">
+			<p>Burger Shop : 1660 Boul. de l'Entente, Québec</p>
+			<a class="btnNumero" href="tel:+14181234567">418-123-4567</a>
+		</div>
+	</section>
+	<footer>
+		<div class="container realise">
+			<p>Site réalisé par : <strong>Caroline Poulin</strong> | Dans le cadre de AEC développement web front-end - Cégep de Trois-Rivière</p>
+		</div>
+	</footer>
+</body>
+</html>
+<script type="text/javascript" src="js/script.js"></script>
