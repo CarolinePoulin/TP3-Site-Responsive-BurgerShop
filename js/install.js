@@ -7,7 +7,7 @@ window.addEventListener('beforeinstallprompt', saveBeforeInstallPromptEvent);
 
 /** Event handler for beforeinstallprompt event.
  * Saves the event & shows install button.
- * @param {Event} evt
+ * @ param {Event} evt
  */
 
 function saveBeforeInstallPromptEvent(evt) {
@@ -17,7 +17,7 @@ function saveBeforeInstallPromptEvent(evt) {
 }
 
 /** Event handler for buInstall - Does the PWA installation.
- * @param {Event} evt
+ * @ param {Event} evt
  */
 
 function installPWA(evt) {
@@ -42,7 +42,7 @@ function installPWA(evt) {
 
 /** Event handler for appinstalled event.
  * Log the installation to analytics or save the event somehow.
- * @param {Event} evt
+ * @ param {Event} evt
  */
 
 function logAppInstalled(evt) {
