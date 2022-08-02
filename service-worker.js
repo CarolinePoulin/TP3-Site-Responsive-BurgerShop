@@ -4,7 +4,6 @@ const CACHE_NAME = 'static-cache-v3';
 // Add list of files to cache here.
 const FILES_TO_CACHE = [
     'offline.html',
-    'index.html',
     'confirmation.html',
     'macommande.html',
     'reservation.html',
