@@ -1,5 +1,5 @@
 // Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v5';
+const CACHE_NAME = 'static-cache-v6';
 
 // Add list of files to cache here.
 const FILES_TO_CACHE = [
@@ -28,7 +28,7 @@ self.addEventListener('activate', (evt) => {
     console.log('[ServiceWorker]Activate');
     // Remove previous cached data from disk.
     evt.waitUntil(
-        caches.keys().then((keylist) => {
+        caches.keys().then((keyList) => {
             return Promise.all(keyList.map((key) => {
                 if (key !== CACHE_NAME) {
                     console.log('[ServiceWorker] Removing old cache', key);
