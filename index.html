@@ -15,6 +15,17 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="apple-mobile-web-app-title" content="TP3-SITE-RESPONSIVE">
 	<link rel="apple-touch-icon" href="/img/icons/ ">
+	<script>
+		// Register service worker:
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', () => {
+				navigator.serviceWorker.register('service-worker.js')
+				.then((reg) => {
+					console.log('Notre service worker est chargé !', reg);
+				});
+			});
+		}
+	</script>
 </head>
 <body>
 	<header>
